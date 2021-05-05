@@ -1,8 +1,8 @@
-DROP DATABASE IF EXISTS usersdb;
+DROP DATABASE IF EXISTS users_db;
 
-CREATE DATABASE usersdb;
+CREATE DATABASE users_db;
 
-\c usersdb;
+\c users_db;
 
 DROP TABLE IF EXISTS users;
 

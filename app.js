@@ -4,6 +4,9 @@ const ExpressError = require('./expressError')
 
 app.use(express.json())
 
+const userRoutes = require("./routes/users")
+app.use("/users", userRoutes)
+
 app.use((req, res, next) => {
     const err = new ExpressError("Not Found", 404)
 
